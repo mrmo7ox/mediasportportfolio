@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Mediasport Portfolio</title>
+    <script src="https://kit.fontawesome.com/1cc2b7bb17.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    :root {
+        --hover_color: #00a6fb;
+        --hover_color: #00000038;
+    }
+
+    .xfont {
+        font-family: "Poppins";
+        font-weight: 500;
+    }
+
+    .font800 {
+        font-family: "Poppins";
+        font-weight: 800;
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="relative xfont h-[100vh] w-full ">
+        <div
+            class="z-[-1] bg-cover w-full absolute top-0 left-0 right-0 bottom-0  background-image: url(/src/bg1.jpg) ">
+            <div class=" absolute top-0 left-0 right-0 bottom-0  bg-gradient-to-b from-black to-transparant "></div>
+            <img class="w-full h-full md:block hidden" src="/src/bg1.jpg" alt="bg">
+            <img class="w-full h-full md:hidden" src="/src/bg2.jpg" alt="bg">
+        </div>
+        <header class="px-4 py-6 font list-none w-[100%] flex justify-between items-center">
+            <div class="md:w-[25%] md:w-[50%] w-full h-full">
+                <div class="w-full gap-5 flex md:justify-start md:ml-8 justify-center items-center h-full">
+                    <ul class=" flex justify-center">
+                        <a href="#" class="text-white hover:text-[#00a6fb]">HOME</a>
+                    </ul>
+                    <ul class="flex justify-center">
+                        <a href="#" class="text-white hover:text-[#00a6fb]">ABOUT</a>
+                    </ul>
+                    <ul class="flex justify-center">
+                        <a href="#" class="text-white hover:text-[#00a6fb]">WORKS</a>
+                    </ul>
+                    <ul class="flex justify-center">
+                        <a href="#" class="text-white hover:text-[#00a6fb]">CONTACT</a>
+                    </ul>
+                </div>
+            </div>
+            <div class=" w-[50%] md:flex hidden justify-end">
+                <ul>
+                    <a href="#" class="mr-4 text-white hover:text-[#2577c4]">+212 602 954 570</a>
+                </ul>
+            </div>
+        </header>
+        <div class="flex absolute top-[25%] bottom-[25%] left-0 right-0 ">
+            <div class=" flex flex-col justify-center items-center h-full lg:w-[50%]  md:w-full w-full">
+                <h3 class="  text-white text-[80px]">Mediasport</h3>
+                <h3 class="font800 text-[105px] mt-[-50px] text-[#00a6fb]">Portfolio</h3>
+                <h5 class="px-2 mt-[-40px] tracking-[14px] text-white ">Football Photography</h5>
+                <span class="mt-4 w-[100%] flex  justify-center items-center gap-8">
+                    <button
+                        class="w-[25%] bg-white py-3  hover:text-white hover:bg-black shadow-md shadow-[#00000038]">CONTACT</button>
+                    <button
+                        class="w-[25%] bg-white py-3  hover:text-white hover:bg-[#00a6fb] shadow-md shadow-[#00000038]">WORKS</button>
+                </span>
+            </div>
+        </div>
+        <div class="absolute bottom-5 left-0 right-0 flex gap-5 text-white">
+            <div class=" w-full flex lg:justify-start items-center justify-center gap-2 px-4">
+                <i
+                    class="hover:scale-[1.3] transtion-all duration-200 cursor-pointer text-[30px] fa-brands fa-whatsapp"></i>
+                <i
+                    class="hover:scale-[1.3] transtion-all duration-200 cursor-pointer text-[30px] fa-brands fa-youtube"></i>
+                <i
+                    class="hover:scale-[1.3] transtion-all duration-200 cursor-pointer text-[30px] fa-brands fa-instagram"></i>
+                <i
+                    class="hover:scale-[1.3] transtion-all duration-200 cursor-pointer text-[30px] fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+    <section id="works" class=" bg-black w-full">
+        <span class="text-white xfont ml-4 pt-8 text-[24px] w-full flex justify-center items-center gap-2">
+            <h3><i class="fa-solid fa-briefcase"></i> WORKS</h3>
+        </span>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide ">
+                    <img class="rounded-xl" src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+
+
+
+            </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            loop: true,
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            spaceBetween: -50,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+                slideShadows: true,
+            },
+
+        });
+    </script>
+</body>
+
+</html>
